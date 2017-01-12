@@ -1,5 +1,5 @@
 # LotoResto
 
-Just a small app to choose in which restaurant to eat
+WebApp qui permet de choisir un restaurant où manger le midi.
 
-The Master branch is automatically deployed on https://lotoresto.herokuapp.com
+L'App est et restra totalement statique, la branche Master du repo est dépoyé automatiquement sur https://lotoresto.herokuapp.com
