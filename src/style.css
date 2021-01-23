@@ -46,9 +46,9 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.jumbotron p.explication{
+.jumbotron p.explication {
   text-align: left;
-  margin-top : 20px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 
@@ -77,6 +77,36 @@ body {
 
 /* #############  Custom Style ################@@ */
 
-.table td{
+.fsize-16 {
+  font-size: 16rem;
+}
+
+.table td {
   text-align: center;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
