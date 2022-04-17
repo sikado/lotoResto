@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <table class="table table-bordered">
+      <tbody>
+        <tr *ngFor="let ligne of table; let i = index">
+          <td
+            *ngFor="let item of ligne; let j = index"
+            [ngClass]="{ 'table-active': selectedId === i * MAX_LIGNE + j }"
+          >
+            {{ item }} {{ i * MAX_LIGNE + j }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
