@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TableComponent {
   @Input() selectedId: number | null | undefined;
-  @Input() table: string[][] | null | undefined;
+  @Input() data: string[] | null | undefined;
   @Input() MAX_LIGNE!: number;
 }

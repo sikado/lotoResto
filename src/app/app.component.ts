@@ -27,23 +27,7 @@ export class AppComponent {
 
   private data$ = this.dataService.getConfig();
 
-  table$: Observable<string[][]> = this.data$.pipe(
-    map((data) => {
-      const table: string[][] = [[]];
-
-      if (data.length % 4 === 0) {
-        this.MAX_LIGNE = 4;
-      }
-      data.forEach((el, index) => {
-        if (index % this.MAX_LIGNE === 0 && index !== 0) {
-          table.push([]);
-        }
-
-        table[table.length - 1].push(el);
-      });
-      return table;
-    })
-  );
+  table$: Observable<string[]> = this.data$;
 
   launchRandAction = new Subject<void>();
   selectedId$ = this.launchRandAction.pipe(
