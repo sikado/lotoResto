@@ -5,8 +5,7 @@ import {
   Observable,
   startWith,
   Subject,
-  switchMap,
-  tap,
+  switchMap
 } from 'rxjs';
 import packageJson from '../../package.json';
 import { DataService } from './data.service';
@@ -24,6 +23,7 @@ export class AppComponent {
   public version: string = packageJson.version;
 
   MAX_LIGNE = 3;
+  title = "Loto Resto"
 
   private data$ = this.dataService.getConfig();
 
@@ -40,7 +40,7 @@ export class AppComponent {
     map(([selectedId, table]) => ({ selectedId, table }))
   );
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   launchRand() {
     let count = 0;
